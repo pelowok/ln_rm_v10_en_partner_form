@@ -10,6 +10,13 @@
     <script type="text/javascript">
         console.log('**** REMOVE THIS CSS file IN PRODUCTION ****');
     </script>
+
+    <!-- Specify a version of jQuery that overrides the jQuery-v-1.7.1 default used by HubSpot -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        console.log('**** REMOVE THIS jQuery request IN PRODUCTION ****');
+    </script>
     <!-- END INSERT -->
 
 </head>
@@ -24,7 +31,7 @@
 
     <div id="page-container" class="container-fluid text-center">
 
-        <div id="herosplash" class="splashimg"  style="background-image: url('{{ widget_data.hero_image.src }}')">
+        <div id="herosplash" class="splashimg"">
             <div class="container">
                 <div class="splashimg-header">
                     <div class="row">
@@ -50,7 +57,9 @@
                                     <!-- ***************************************************************************-->
                                     <!-- ***************************************************************************-->
 
+                                    <script type="text/javascript" src="js/makeform.js"></script>
 
+                                    <script type="text/javascript" src="js/geolocate.js"></script>
                                     <script type="text/javascript" src="js/utils.js"></script>
                                     <script type="text/javascript" src="js/fValidate.config.js"></script>
                                     <script type="text/javascript" src="js/fValidate.core.js"></script>
